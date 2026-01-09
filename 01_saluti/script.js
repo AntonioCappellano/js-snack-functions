@@ -3,13 +3,20 @@
 const userName = "Mario";
 
 // Dichiara la funzione qui.
+
 function greet(name) {
-  console.log(`ciao ${name}`);
-  return `Ciao ${name}`;
+  return `ciao ${name}`;
 }
+
+// Arrow Functions
+
+const greets = (name) => `ciao ${name}`;
 
 // Invoca la funzione qui e stampa il risultato in console
 
 greet("Mario");
+console.log(greet(userName));
+greets("Mario");
+console.log(greets(userName));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
