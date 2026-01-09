@@ -2,12 +2,19 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-
 // Dichiara la funzione qui.
 
+function initials(names) {
+  const result = [];
+  for (let i = 0; i < names.length; i++) {
+    result.push(names[i].substring(0, 1));
+  }
+  return result;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+initials(names);
+console.log(initials(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
